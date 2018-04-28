@@ -1,6 +1,7 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
@@ -16,6 +17,7 @@ module.exports = {
     compress: true,
     port: 9000
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -40,6 +42,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'), // 模板文件

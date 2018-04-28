@@ -14,7 +14,7 @@ export default {
       message: "Vue With Webpack4"
     };
   },
-  components: { Hello }
+  components: { Hello },
 };
 </script>
 

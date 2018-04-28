@@ -8,7 +8,6 @@
     "从零开始构建vue项目",
     "html-webpack-plugin"
   ],
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production  --config webpack.config.js",
@@ -19,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-loader": "^7.1.4",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.2.0",
     "vue": "^2.5.16",
