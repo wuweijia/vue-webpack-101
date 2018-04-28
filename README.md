@@ -118,7 +118,7 @@ entry: path.join(__dirname, 'src/index.js'),
     filename: 'bundle.js',
     path: path.join(__dirname, 'dist')
   },
-  _**mode: 'development',**_
+  mode: 'development',
 ```
 至此，npm run build 终于跑起来了
 ## 结果图
