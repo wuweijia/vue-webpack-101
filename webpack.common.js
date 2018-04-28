@@ -1,23 +1,17 @@
 const path = require('path');
-const { VueLoaderPlugin } = require('vue-loader');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
   output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'dist')
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   resolve: {
     extensions: [".js", ".json", ".css", '.vue']
   },
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 9000
-  },
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -49,4 +43,4 @@ module.exports = {
       inject: 'body' // js的script注入到body底部
     })
   ]
-}
+};
