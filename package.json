@@ -1,0 +1,34 @@
+{
+  "name": "vue-webpack-ssr",
+  "version": "1.0.0",
+  "description": "vue webpack",
+  "keywords": [
+    "webpack4",
+    "vue",
+    "从零开始构建vue项目",
+    "html-webpack-plugin"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production  --config webpack.config.js",
+    "start": "webpack-dev-server --mode production --open",
+    "dev": "webpack-dev-server --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.5.16",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.0.3",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.6.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
