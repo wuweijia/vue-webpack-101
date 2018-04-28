@@ -188,6 +188,7 @@ module.exports = {
   }
 ```
 ## 执行npm run dev
+![image](https://user-images.githubusercontent.com/10173268/39393537-06026460-4af9-11e8-907f-748703a5b4b9.png)
 
 > 完结散花
 
